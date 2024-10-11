@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/mainLogo.jpg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>Создайте новый аккаунт</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2a66bc2625.js"
+      crossorigin="anonymous"
+      ;
+    ></script>
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+    <header id="home_navbar"></header>
+
+
+    <!-- MAIN BODY -->
+    <div id="boxbody">
+      <div class="imgbo">
+        <img src="./images/signup_page_img.png" alt="" />
+      </div>
+      <form id="form">
+        <div class="signin">
+          <h2 id="signupText">Регистрация</h2>
+          <h3 class="label">Имя*</h3>
+          <input
+            class="signup_input"
+            type="text"
+            name="fname"
+            placeholder="Введите имя"
+            required
+          />
+
+          <h3 class="label">Фамилия*</h3>
+          <input
+            class="signup_input"
+            type="text"
+            name="sname"
+            placeholder="Введите фамилию"
+            required
+          />
+
+          <h3 class="label">Номер телефона*</h3>
+          <input
+            class="signup_input"
+            type="tel"
+            name="phone"
+            placeholder="+12223334455"
+            required
+          />
+
+          <h3 class="label">Электронная почта*</h3>
+          <input
+            class="signup_input"
+            type="email"
+            name="email"
+            placeholder="abc@example.com"
+            required
+          />
+
+          <h3 class="label">Пароль*</h3>
+          <input
+            class="signup_input"
+            type="password"
+            name="password"
+            placeholder="Придумайте пароль"
+            required
+          />
+
+          <h3 class="label">Выберите роль*</h3>
+          <select name="role" id="role" class="signup_input" required>
+            <option value="seller">Продавец</option>
+            <option value="buyer" selected>Покупатель</option>
+          </select>
+          
+          <p class="text">
+            Продолжая, Я соглащаюсь с <span> условиями использования </span> и
+            <span>конфиденциальности.</span>
+          </p>
+
+          <p id="signup_error"></p>
+
+          <input type="submit" id="signup_button" value="Продолжить" />
+          <p class="text">
+            У Вас уже есть аккаунт ?<a href="/login_page"
+              ><span id="logIn"> Вход </span></a
+            >
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="/scripts/navbar.js" type="module"></script>
+    <script src="/scripts/footer.js" type="module"></script>
+    <script src="/scripts/signup.js" type="module"></script>
+
+  </body>
+</html>
+
+

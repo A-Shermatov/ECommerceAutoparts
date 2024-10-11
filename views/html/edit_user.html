@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/mainLogo.jpg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/edit_user.css" />
+    <title>Измените свой профиль</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2a66bc2625.js"
+      crossorigin="anonymous"
+      ;
+    ></script>
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+    <header id="home_navbar"></header>
+
+
+    <!-- MAIN BODY -->
+    <div id="boxbody">
+      <div class="imgbo">
+        <img src="/images/signup_page_img.png" alt="" />
+      </div>
+      <form id="form">
+        <div class="signin">
+          <h2 id="signupText">Изменить профиль</h2>
+          <h3 class="label">Имя</h3>
+          <input
+            class="signup_input"
+            type="text"
+            name="fname"
+            id="fname"
+          />
+
+          <h3 class="label">Фамилия</h3>
+          <input
+            class="signup_input"
+            type="text"
+            name="sname"
+            id="sname"
+          />
+
+          <h3 class="label">Номер телефона</h3>
+          <input
+            class="signup_input"
+            type="tel"
+            name="phone"
+            id="phone"
+          />
+
+          <h3 class="label">Пароль</h3>
+          <input
+            class="signup_input"
+            type="password"
+            name="password"
+            id="password"
+          />
+          
+          <p class="text">
+            Продолжая, Я соглащаюсь с <span> условиями использования </span> и
+            <span>конфиденциальности.</span>
+          </p>
+
+          <p id="signup_error"></p>
+
+          <input type="submit" id="signup_button" value="Продолжить" />
+        </div>
+      </form>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="/scripts/navbar.js" type="module"></script>
+    <script src="/scripts/footer.js" type="module"></script>
+    <script src="/scripts/edit_user.js" type="module"></script>
+
+  </body>
+</html>
+
+
+

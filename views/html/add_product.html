@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/mainLogo.jpg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/add_product.css" />
+    <title>Добавьте новый продукт</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2a66bc2625.js"
+      crossorigin="anonymous"
+      ;
+    ></script>
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+    <header id="home_navbar"></header>
+
+
+    <!-- MAIN BODY -->
+    <div id="boxbody">
+      <div class="imgbo">
+        <img src="./images/signup_page_img.png" alt="" />
+      </div>
+      <form id="form">
+        <div class="add_product">
+          <h2 id="add_product_text">Добавление нового продукта</h2>
+          <h3 class="label">Название продукта*</h3>
+          <input
+            class="add_product_input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Введите название продукта"
+            required
+          />
+
+          <h3 class="label">VIN-номер*</h3>
+          <input
+            class="add_product_input"
+            type="text"
+            name="vin"
+            id="vin"
+            placeholder="Введите VIN-номар"
+            required
+          />
+
+          <h3 class="label">Описание продукта*</h3>
+          <input
+            class="add_product_input"
+            type="text"
+            name="description"
+            id="description"
+            placeholder="Введите описание продукта"
+            required
+          />
+
+          <h3 class="label">Цена (в рублях)*</h3>
+          <input
+            class="add_product_input"
+            type="number"
+            name="price"
+            id="price"
+            placeholder="1000000"
+            required
+          />
+
+          <h3 class="label">Выберите картинку</h3>
+          <input
+            class="add_product_input"
+            type="file"
+            name="img_path"
+            id="img_path"
+            placeholder="/c/users/..."
+            accept="image/png, image/jpeg, image/svg"
+            required
+          />
+
+          <p id="add_product_error"></p>
+
+          <input type="submit" id="add_product_button" value="Продолжить" />
+        </div>
+      </form>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="/scripts/navbar.js" type="module"></script>
+    <script src="/scripts/footer.js" type="module"></script>
+    <script src="/scripts/add_product.js" type="module"></script>
+
+  </body>
+</html>
+
+

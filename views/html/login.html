@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/mainLogo.jpg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <title>Вход пользователя</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2a66bc2625.js"
+      crossorigin="anonymous"
+      ;
+    ></script>
+  </head>
+  <body>
+    <!-- Nav-Bar -->
+    <header id="home_navbar"></header>
+
+    <div class="container">
+      <img
+        class="login-top-image"
+        src="./images/signup_page_img.png"
+        alt=""
+      />
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Вход</span>
+
+          <form id="form">
+            <div class="input-field">
+              <input name="email" type="text" placeholder="Электронная почта"/>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-field">
+              <input name="password" type="password" placeholder="Пароль" />
+              <i class="fa-solid fa-lock"></i>
+              <i class="fa-solid fa-eye-slash showHidePw"></i>
+            </div>
+
+            <span id="login_message"></span>
+
+            <div class="input-field button">
+              <input type="submit" value="Войти" id="login_button" />
+            </div>
+          </form>
+
+          <div class="login-signup">
+            <span class="text"
+              >Еще нет аккаунта?
+              <a href="signup_page" class="text">Регистрация</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer STARTS-->
+
+    <hr />
+
+    <footer id="footer"></footer>
+
+    <!--FOOTER ENDS HERE -->
+    <script src="/scripts/navbar.js" type="module"></script>
+    <script src="/scripts/footer.js" type="module"></script>
+    <script src="/scripts/login.js" type="module"></script>
+  </body>
+</html>
+
+
+<!-- <script src="../JS/home.js" type="module"></script> -->
